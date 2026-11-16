@@ -1,0 +1,26 @@
+CARA INSTALASI PEMBACA NASKAH (macOS)
+=======================================
+
+1. Seret (drag) "Pembaca Naskah.app" ke shortcut folder "Applications"
+   di sebelahnya.
+
+2. CARA MEMBERI IZIN (GATEKEEPER APPROVAL) SAAT PERTAMA KALI DIBUKA:
+   Karena aplikasi ini tidak ditandatangani Apple Developer ID berbayar,
+   macOS akan memblokir pembukaan pertama kali. Pilih salah satu cara berikut:
+
+   Cara A (Lewat System Settings):
+   - Buka "Pembaca Naskah.app" dari folder Applications (muncul peringatan).
+   - Klik "Done" / "OK".
+   - Buka: System Settings > Privacy & Security.
+   - Scroll ke bagian bawah (Security), lalu klik tombol "Open Anyway"
+     di sebelah keterangan "Pembaca Naskah.app was blocked...".
+   - Masukkan password Mac / Touch ID, lalu klik "Open".
+
+   Cara B (Lewat Terminal - Sekali Jalan):
+   - Buka Terminal, lalu jalankan perintah:
+     xattr -cr "/Applications/Pembaca Naskah.app"
+   - Setelah itu aplikasi bisa langsung dibuka normal dengan double-click.
+
+OPSIONAL - MEMBUAT FILE .DMG:
+- Klik ganda file "Buat_DMG.command" untuk menghasilkan "Pembaca_Naskah.dmg"
+  di Desktop berisi aplikasi, shortcut Applications, dan petunjuk ini.
